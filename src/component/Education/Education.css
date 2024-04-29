@@ -1,0 +1,18 @@
+.edu-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.edu-list b {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .edu-list {
+    flex-direction: column;
+    row-gap: 16px;
+    border-bottom: 0.5px solid #26233a;
+    padding-bottom: 16px;
+  }
+}

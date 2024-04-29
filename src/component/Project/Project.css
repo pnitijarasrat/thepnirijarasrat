@@ -1,0 +1,39 @@
+.project-list {
+  display: flex;
+  column-gap: 32px;
+  border-bottom: 1px solid #26233a;
+  padding-bottom: 64px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.project-list div {
+  width: 50%;
+  line-height: 1.5em;
+}
+
+.project-list div p {
+  margin-bottom: 8px;
+}
+
+.project-list div ul {
+  list-style-type: none;
+}
+
+.project-list div ul li {
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .project-list div {
+    width: 100%;
+  }
+}

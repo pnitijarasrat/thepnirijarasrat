@@ -1,0 +1,45 @@
+.about-content {
+  display: flex;
+  column-gap: 32px;
+  width: min(90vw, 1000px);
+}
+
+.about-content-container {
+  width: min(90vw, 50%);
+}
+
+.about-paragraph p {
+  text-indent: 64px;
+  line-height: 1.5em;
+}
+
+.about-content-container img {
+  border-radius: 16px;
+}
+
+.about-bio-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 16px;
+}
+
+.about-bio-list {
+  display: flex;
+  gap: 32px;
+}
+
+.about-bio-list .year {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse;
+    width: 90vw;
+  }
+
+  .about-content-container {
+    width: 100%;
+  }
+}

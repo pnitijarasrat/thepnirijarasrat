@@ -1,0 +1,50 @@
+.red {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  background-color: #f2b1c1;
+  box-shadow: 0 0 50px 100px #f2b1c1;
+  z-index: -1;
+  top: -14vw;
+  left: -11vw;
+  border-radius: 50%;
+}
+.purple {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  background-color: #a37ab3;
+  box-shadow: 0 0 50px 100px #a37ab3;
+  z-index: -1;
+  top: -28vw;
+  left: 61vw;
+  border-radius: 50%;
+}
+
+.sky {
+  position: absolute;
+  width: 100vw;
+  height: 40%;
+  background-color: #232136;
+  box-shadow: 0 0 75px 100px #232136;
+  z-index: -50;
+}
+
+.star {
+  width: min(700px, 60%);
+  margin: auto;
+  height: 100%;
+  color: #f6c177;
+  position: relative;
+}
+
+.star div {
+  color: #f6c177;
+  display: inline-block;
+}
+
+.star .rocket {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+}

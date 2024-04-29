@@ -1,0 +1,20 @@
+.land {
+  width: 100vw;
+  height: 200px;
+  background-color: #9ccfd8;
+  box-shadow: 0 0 75px 100px #9ccfd8;
+  box-sizing: border-box;
+  z-index: -5;
+  position: relative;
+}
+
+.flower-container {
+  width: min(1000px, 90vw);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.flower {
+  color: #eb6f92;
+}
