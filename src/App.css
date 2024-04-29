@@ -4,8 +4,8 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  /* font-family: "Montserrat", monospace; */
+  /* font-family: "JetBrains Mono", monospace; */
+  font-family: "Montserrat", monospace;
   font-optical-sizing: auto;
 }
 

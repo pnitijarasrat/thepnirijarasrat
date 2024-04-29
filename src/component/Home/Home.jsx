@@ -1,16 +1,13 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./Home.css";
 import { SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
-export default function Home({ currentView, handleChangeView }) {
+export default function Home() {
   const socialHoverAnimate = {
     y: -10,
     color: "#f6c177",
-  };
-
-  const ppHoverAnimate = {
-    scale: 1.2,
   };
 
   return (
@@ -53,21 +50,43 @@ export default function Home({ currentView, handleChangeView }) {
           </a>
         </motion.div>
       </div>
-      {/* <motion.div */}
-      {/*   initial={{ opacity: 0, y: 10 }} */}
-      {/*   whileHover={ppHoverAnimate} */}
-      {/*   animate={{ opacity: 1, y: 0 }} */}
-      {/*   className="home-profile-picture" */}
-      {/* > */}
-      {/*   Profile Picture */}
-      {/* </motion.div> */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="home-header"
-      >
-        Hi, my name is Puriwat. A frontend dev.
-      </motion.div>
+      <Header />
     </div>
   );
 }
+
+const Header = () => {
+  const location = useLocation().pathname;
+  const [headerText, setHeaderText] = useState(
+    "Hi, my name is Puriwat. A frontend dev.",
+  );
+
+  useEffect(() => {
+    switch (location) {
+      case "/about":
+        setHeaderText("Let me talk about myself.");
+        break;
+      case "/education":
+        setHeaderText("I'm a Learner!");
+        break;
+      case "/skill":
+        setHeaderText("Let see what I'm capable of.");
+        break;
+      case "/project":
+        setHeaderText("The best way to learn is to do !");
+        break;
+      default:
+        setHeaderText("Hi, my name is Puriwat. A frontend dev.");
+    }
+  }, [location]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="home-header"
+    >
+      {headerText}
+    </motion.div>
+  );
+};
