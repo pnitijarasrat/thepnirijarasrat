@@ -21,7 +21,18 @@
 }
 
 .project-list div ul {
+  /* list-style-type: none; */
+}
+
+.project-list .project-list-stack {
   list-style-type: none;
+}
+
+.project-list-desc {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ebbcba;
+  margin-bottom: 4px;
+  display: inline-block;
 }
 
 .project-list div ul li {

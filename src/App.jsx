@@ -10,7 +10,6 @@ import Education from "./component/Education/Education";
 import Skill from "./component/Skill/Skill";
 import Project from "./component/Project/Project";
 import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
-import Contact from "./component/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const divStyle = {

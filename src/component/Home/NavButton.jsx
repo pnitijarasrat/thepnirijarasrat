@@ -24,6 +24,7 @@ const DisplayButton = ({ position }) => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
+              whileTap={{ scale: 0.97 }}
             >
               <MdOutlineKeyboardArrowLeft size={25} />
               {liList[i - 1].name}
@@ -37,6 +38,7 @@ const DisplayButton = ({ position }) => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
+              whileTap={{ scale: 0.97 }}
             >
               {liList[i + 1].name}
               <MdOutlineKeyboardArrowRight size={25} />

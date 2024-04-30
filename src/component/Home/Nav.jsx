@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { liList } from "./LinkList.js";
 import "./Home.css";
 import useViewport from "../function/useViewport";
+import MobileNav from "./MobileNav";
 import { Link, useLocation } from "react-router-dom";
 
 // TODO: make mobile nav version
@@ -20,7 +21,9 @@ export default function Nav() {
 
   return (
     <>
-      {width < 400 ? null : (
+      {width < 400 ? (
+        <MobileNav />
+      ) : (
         <motion.nav>
           <motion.ul>
             {liList.map((li) => (
