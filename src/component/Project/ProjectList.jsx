@@ -24,9 +24,6 @@ export default function ProjectList({
           <li>Database: {projectStack.db}</li>
         </ul>
         <br />
-        <a href={projectLink} target="_blank" rel="noreferrer">
-          <button>Visit</button>
-        </a>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
@@ -40,6 +37,10 @@ export default function ProjectList({
             <li key={index}>{p}</li>
           ))}
         </ul>
+        <br />
+        <a href={projectLink} target="_blank" rel="noreferrer">
+          <button>Visit</button>
+        </a>
       </motion.div>
     </div>
   );

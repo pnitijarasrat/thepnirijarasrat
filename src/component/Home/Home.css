@@ -1,3 +1,5 @@
+@import "../../var.css";
+
 .home-section {
   display: flex;
   align-items: center;
@@ -12,14 +14,14 @@
   justify-content: space-between;
   align-items: center;
   width: min(1000px, 90vw);
-  color: #f6c177;
+  color: var(--yellow);
 }
 
 .home-social-list {
   font-size: 1.5em;
   display: flex;
   gap: 8px;
-  color: #f6c177;
+  color: var(--yellow);
 }
 
 .home-social a {
@@ -30,13 +32,13 @@
   font-size: 1.5em;
 }
 .home-social-github a:hover {
-  color: #f6c177;
+  color: var(--yellow);
 }
 
 .home-header {
   padding: 16px 0;
   border-radius: 8px;
-  background-color: #26233a;
+  background-color: var(--light-black);
   text-align: center;
   width: min(500px, 90vw);
   margin: auto;
@@ -79,7 +81,7 @@ nav ul li {
 }
 
 .selected {
-  border-bottom: 2px solid #f6c177;
+  border-bottom: 2px solid var(--yellow);
 }
 
 .nav-button-container {
@@ -97,7 +99,7 @@ nav ul li {
 }
 
 .mobile-nav-container {
-  border: 2px solid #6e6a86;
+  border: 2px solid var(--light-black);
   border-radius: 5px;
   width: min(90vw, 1000px);
   margin: auto;
@@ -111,7 +113,7 @@ nav ul li {
 .mobile-nav-tabpane {
   width: min(90vw, 1000px);
   margin: auto;
-  background-color: #26233a;
+  background-color: var(--light-black);
   margin-top: 8px;
   border-radius: 5px;
   box-sizing: border-box;

@@ -1,7 +1,9 @@
+@import "../../var.css";
+
 .project-list {
   display: flex;
   column-gap: 32px;
-  border-bottom: 1px solid #26233a;
+  border-bottom: 1px solid var(--light-black);
   padding-bottom: 64px;
 }
 
@@ -30,12 +32,11 @@
 
 .project-list-desc {
   padding-bottom: 4px;
-  border-bottom: 2px solid #ebbcba;
   margin-bottom: 4px;
   display: inline-block;
 }
 
-.project-list div ul li {
+.project-list div ul {
   padding-left: 16px;
 }
 
@@ -46,5 +47,8 @@
   }
   .project-list div {
     width: 100%;
+  }
+  .project-list div ul {
+    padding-left: 16px;
   }
 }

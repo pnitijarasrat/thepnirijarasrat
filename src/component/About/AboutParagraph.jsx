@@ -20,7 +20,7 @@ export default function AboutParagraph() {
         software development. It didn't attract me at first, it had never been
         since my first year learning <i>python</i>. The field that actually
         attracts me is web development, especially{" "}
-        <b style={{ color: "#eb6f92" }}>Frontend Development</b>. So I spent 3-4
+        <b style={{ color: "#d3869b" }}>Frontend Development</b>. So I spent 3-4
         hours every night learning web development essentials from Udemy, Colt
         Steele's courses, he is a wonderful instructor. It has already been
         almost 2 years of constantly self learning ( at the time I was building
