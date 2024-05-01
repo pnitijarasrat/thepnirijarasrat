@@ -58,8 +58,10 @@ body {
 }
 
 button {
-  background-color: #c4a7e7;
-  border: none;
+  background-color: transparent;
+  border: 2px solid #c4a7e7;
+  border-radius: 5px;
+  color: #c4a7e7;
   padding: 8px 16px;
 }
 
@@ -71,4 +73,7 @@ button a {
 
 button:hover {
   cursor: pointer;
+  transition: 0.2s;
+  background-color: #c4a7e7;
+  color: #e0def4;
 }
