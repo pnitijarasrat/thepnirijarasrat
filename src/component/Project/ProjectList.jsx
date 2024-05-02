@@ -38,9 +38,11 @@ export default function ProjectList({
           ))}
         </ul>
         <br />
-        <a href={projectLink} target="_blank" rel="noreferrer">
-          <button>Visit</button>
-        </a>
+        <div className="project-footer">
+          <a href={projectLink} target="_blank" rel="noreferrer">
+            <button>Visit</button>
+          </a>
+        </div>
       </motion.div>
     </div>
   );

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./About.css";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import AboutParagraph from "./AboutParagraph";
 import AboutBio from "./AboutBio";
 import AboutContact from "./AboutContact";
@@ -9,6 +9,8 @@ import HR from "../Util/HR";
 // TODO: responsive
 
 export default function About() {
+  const ref = useRef(null);
+  const inView = useInView(ref);
   return (
     <motion.div>
       <motion.h1
@@ -30,6 +32,7 @@ export default function About() {
           <br />
           <br />
           <AboutContact />
+
           <HR />
         </motion.div>
         <motion.div

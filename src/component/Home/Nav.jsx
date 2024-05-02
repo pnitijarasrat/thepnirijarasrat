@@ -14,7 +14,6 @@ export default function Nav() {
   const { width } = useViewport();
 
   const liHoverAnimate = {
-    color: "#ebdbb2",
     scale: 1.2,
     cursor: "pointer",
   };

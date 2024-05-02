@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import "./Home.css";
+import ThemeButton from "./ThemeButton";
 import { SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
-import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ThemeContext } from "../../ThemeProvider";
 
 export default function Home() {
   const socialHoverAnimate = {
@@ -10,30 +12,34 @@ export default function Home() {
     color: "#f6c177",
   };
 
+  const { darkTheme, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <div className="home-section">
+    <div className={`home-section ${darkTheme ? "dark-theme" : "light-theme"}`}>
       <div className="home-social">
         <motion.div
           className="home-social-list"
           initial={{ x: -50 }}
           animate={{ x: 0 }}
         >
-          <motion.a
-            whileHover={socialHoverAnimate}
-            href="https://www.instagram.com/qwertyadgsfhzxcvb/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiInstagram />
-          </motion.a>
-          <motion.a
-            whileHover={socialHoverAnimate}
-            href="https://www.linkedin.com/in/p-nitijarasrat/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiLinkedin />
-          </motion.a>
+          <motion.div whileHover={socialHoverAnimate}>
+            <a
+              href="https://www.instagram.com/qwertyadgsfhzxcvb/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiInstagram />
+            </a>
+          </motion.div>
+          <motion.div whileHover={socialHoverAnimate}>
+            <a
+              href="https://www.linkedin.com/in/p-nitijarasrat/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiLinkedin />
+            </a>
+          </motion.div>
         </motion.div>
         <motion.div
           initial={{ x: 50 }}
@@ -49,6 +55,7 @@ export default function Home() {
             Github{"  "} <SiGithub />
           </a>
         </motion.div>
+        <ThemeButton onClick={toggleTheme}>theme</ThemeButton>
       </div>
       <Header />
     </div>
@@ -84,7 +91,7 @@ const Header = () => {
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="home-header"
+      className={`home-header`}
     >
       {headerText}
     </motion.div>

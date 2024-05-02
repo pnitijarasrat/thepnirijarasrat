@@ -13,19 +13,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(1000px, 90vw);
-  color: var(--yellow);
+  width: var(--width);
 }
 
 .home-social-list {
   font-size: 1.5em;
   display: flex;
   gap: 8px;
-  color: var(--yellow);
-}
-
-.home-social a {
-  text-decoration: none;
 }
 
 .home-social-github a {
@@ -38,10 +32,17 @@
 .home-header {
   padding: 16px 0;
   border-radius: 8px;
-  background-color: var(--light-black);
   text-align: center;
   width: min(500px, 90vw);
   margin: auto;
+}
+
+.dark-theme .home-header {
+  background-color: var(--light-black);
+}
+
+.light-theme .home-header {
+  background-color: var(--font-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,7 +66,7 @@
 
 nav ul {
   display: flex;
-  width: min(1000px, 90vw);
+  width: var(--width);
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -85,7 +86,7 @@ nav ul li {
 }
 
 .nav-button-container {
-  width: min(1000px, 90vw);
+  width: var(--width);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -99,7 +100,6 @@ nav ul li {
 }
 
 .mobile-nav-container {
-  border: 2px solid var(--light-black);
   border-radius: 5px;
   width: min(90vw, 1000px);
   margin: auto;
@@ -110,13 +110,28 @@ nav ul li {
   align-items: center;
 }
 
+.dark-theme .mobile-nav-container {
+  border: 2px solid var(--light-black);
+}
+
+.light-theme .mobile-nav-container {
+  border: 2px solid var(--font-color);
+}
+
 .mobile-nav-tabpane {
   width: min(90vw, 1000px);
   margin: auto;
-  background-color: var(--light-black);
   margin-top: 8px;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.dark-theme .mobile-nav-tabpane {
+  background-color: var(--light-black);
+}
+
+.light-theme .mobile-nav-tabpane {
+  background-color: var(--font-color);
 }
 
 .mobile-nav-tabpane ul {
@@ -130,6 +145,21 @@ nav ul li {
   border-radius: 5px;
 }
 
-.mobile-nav-tabpane ul li:hover {
-  background-color: #6e6a86;
+.theme-button div {
+  height: 25px;
+}
+
+.theme-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 5px;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.theme-button:hover {
+  cursor: pointer;
 }

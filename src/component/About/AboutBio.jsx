@@ -33,7 +33,7 @@ const bioList = [
 export default function AboutBio() {
   return (
     <motion.div>
-      <motion.h2>Bio</motion.h2>
+      <motion.h3>Bio</motion.h3>
       <motion.div className="about-bio-container">
         {bioList.map((bio, key) => (
           <BioList key={key} year={bio.year} event={bio.event} />

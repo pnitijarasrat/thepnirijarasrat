@@ -5,6 +5,7 @@
   column-gap: 32px;
   border-bottom: 1px solid var(--light-black);
   padding-bottom: 64px;
+  flex-direction: column;
 }
 
 .project-container {
@@ -14,7 +15,7 @@
 }
 
 .project-list div {
-  width: 50%;
+  width: 100%;
   line-height: 1.5em;
 }
 
@@ -43,7 +44,6 @@
 @media only screen and (max-width: 768px) {
   .project-list {
     flex-direction: column;
-    row-gap: 24px;
   }
   .project-list div {
     width: 100%;

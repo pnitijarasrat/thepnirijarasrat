@@ -1,5 +1,6 @@
 :root {
   --black: #282828;
+  --white: #fbf1c7;
   --light-black: #504945;
   --red: #fb4934;
   --green: #b8bb26;
@@ -10,4 +11,7 @@
   --grey: #a89984;
   --header-color: #fbf1c7;
   --font-color: #ebdbb2;
+  --light-header-color: "#282828";
+  --light-font-color: "#504945";
+  --width: min(700px, 90vw);
 }

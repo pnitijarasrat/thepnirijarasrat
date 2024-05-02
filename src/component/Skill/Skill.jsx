@@ -3,9 +3,6 @@ import "./Skill.css";
 import { motion, useInView } from "framer-motion";
 import HR from "../Util/HR";
 
-// TODO: add skill animation
-// TODO: lower mobile child gap
-
 export default function Skill() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

@@ -1,0 +1,16 @@
+export const color = {
+  black: "#282828",
+  white: "#fbf1c7",
+  lightBlack: "#504945",
+  red: "#fb4934",
+  green: "#b8bb26",
+  yellow: "#fabd2f",
+  blue: "#83a598",
+  purple: "#d3869b",
+  aqua: "#8ec07c",
+  grey: "#a89984",
+  darkHeaderColor: "#fbf1c7",
+  darkFontColor: "#ebdbb2",
+  lightHeaderColor: "#282828",
+  lightFontColor: "#504945",
+};

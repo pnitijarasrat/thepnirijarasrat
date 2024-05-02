@@ -1,0 +1,61 @@
+@import "./var.css";
+
+.light-theme p,
+.light-theme div,
+.light-theme a {
+  color: var(--light-font-color);
+}
+
+.light-theme hr {
+  border: 0.5px solid var(--font-color);
+}
+
+.light-theme h1 {
+  margin-bottom: 24px;
+  display: inline-block;
+  color: var(--light-header-color);
+}
+
+.light-theme h2 {
+  color: var(--light-header-color);
+  border-bottom: 4px solid var(--red);
+  padding-bottom: 1px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.light-theme h3 {
+  color: var(--light-header-color);
+  border-bottom: 4px solid var(--green);
+  padding-bottom: 1px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.light-theme .footer {
+  text-align: center;
+  margin-top: 128px;
+  margin-bottom: 16px;
+  color: var(--light-font-color);
+  font-size: 0.8em;
+}
+
+.light-theme button {
+  background-color: transparent;
+  border: 2px solid var(--aqua);
+  border-radius: 5px;
+  color: var(--aqua);
+  padding: 8px 16px;
+}
+
+.light-theme button a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.light-theme button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: var(--aqua);
+  color: var(--light-font-color);
+}

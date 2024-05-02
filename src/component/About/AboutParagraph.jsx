@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa";
 export default function AboutParagraph() {
   return (
     <div className="about-paragraph">
-      <h2>Who am I ?</h2>
+      <h3>Who am I ?</h3>
       <br />
       <p>
         I'm just an ordinary guy who found myself enjoy coding stuff when I was
@@ -13,7 +13,7 @@ export default function AboutParagraph() {
         rough year. And I'm about to graduate soon !!
       </p>
       <br />
-      <h2>How do I get into this field ?</h2>
+      <h3>How do I get into this field ?</h3>
       <br />
       <p>
         IE has to learn almost every aspect of engineering, yes, including
@@ -27,7 +27,7 @@ export default function AboutParagraph() {
         this website )
       </p>
       <br />
-      <h2>My perspective of Coding ?</h2>
+      <h3>My perspective of Coding ?</h3>
       <br />
       <p>
         Code is just a <i>tool</i> which can be learned, including me even I
@@ -35,7 +35,7 @@ export default function AboutParagraph() {
         social life ( at the time ) and started learning from zero.
       </p>
       <br />
-      <h2>My future plan ?</h2>
+      <h3>My future plan ?</h3>
       <br />
       <p>
         Nothing much more than developing myself in every aspect, health, skills

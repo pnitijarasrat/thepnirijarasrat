@@ -36,7 +36,7 @@ const contactList = [
 export default function AboutContact() {
   return (
     <motion.div>
-      <motion.h2>Contact</motion.h2>
+      <motion.h3>Contact</motion.h3>
       <motion.div className="about-bio-container">
         {contactList.map((ct, key) => (
           <ContactList

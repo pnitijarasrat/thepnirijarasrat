@@ -11,80 +11,9 @@
 
 body {
   overflow-x: hidden;
-}
-
-p,
-div,
-a {
-  color: var(--font-color);
+  transition: 0.3s ease-in-out;
 }
 
 a {
   text-decoration: none;
-}
-
-p {
-  text-align: justify;
-}
-
-/* p { */
-/*   text-align: justify; */
-/* } */
-
-hr {
-  border: 0.5px solid var(--light-black);
-}
-
-h1 {
-  margin-bottom: 24px;
-  display: inline-block;
-  color: var(--header-color);
-}
-
-h2 {
-  color: var(--header-color);
-  border-bottom: 4px solid var(--red);
-  padding-bottom: 1px;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-h3 {
-  color: var(--header-color);
-  border-bottom: 4px solid var(--green);
-  padding-bottom: 1px;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-body {
-  background-color: var(--black);
-}
-
-.footer {
-  text-align: center;
-  margin-top: 128px;
-  margin-bottom: 16px;
-  color: var(--light-black);
-  font-size: 0.8em;
-}
-
-button {
-  background-color: transparent;
-  border: 2px solid var(--aqua);
-  border-radius: 5px;
-  color: var(--aqua);
-  padding: 8px 16px;
-}
-
-button a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-button:hover {
-  cursor: pointer;
-  transition: 0.2s;
-  background-color: var(--aqua);
-  color: var(--font-color);
 }

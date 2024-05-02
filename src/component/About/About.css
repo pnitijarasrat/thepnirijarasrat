@@ -1,11 +1,12 @@
 .about-content {
   display: flex;
   column-gap: 32px;
-  width: min(90vw, 1000px);
+  width: var(--width);
+  flex-direction: column-reverse;
 }
 
 .about-content-container {
-  width: min(90vw, 50%);
+  width: 100%;
 }
 
 .about-paragraph p {
@@ -35,7 +36,6 @@
 
 @media only screen and (max-width: 768px) {
   .about-content {
-    flex-direction: column-reverse;
     width: 90vw;
   }
 
