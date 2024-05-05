@@ -6,8 +6,6 @@ import useViewport from "../function/useViewport";
 import MobileNav from "./MobileNav";
 import { Link, useLocation } from "react-router-dom";
 
-// TODO: make mobile nav version
-
 export default function Nav() {
   const location = useLocation();
 

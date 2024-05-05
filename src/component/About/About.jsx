@@ -6,8 +6,6 @@ import AboutBio from "./AboutBio";
 import AboutContact from "./AboutContact";
 import HR from "../Util/HR";
 
-// TODO: responsive
-
 export default function About() {
   const ref = useRef(null);
   const inView = useInView(ref);

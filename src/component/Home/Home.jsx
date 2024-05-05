@@ -7,10 +7,7 @@ import { motion } from "framer-motion";
 import { ThemeContext } from "../../ThemeProvider";
 
 export default function Home() {
-  const socialHoverAnimate = {
-    y: -10,
-    color: "#f6c177",
-  };
+  const socialHoverAnimate = { y: -10 };
 
   const { darkTheme, toggleTheme } = useContext(ThemeContext);
 

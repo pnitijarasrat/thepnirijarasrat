@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import "./dark-theme.css";
 import "./light-theme.css";
 import "./App.css";
@@ -14,7 +14,7 @@ import Skill from "./component/Skill/Skill";
 import Project from "./component/Project/Project";
 import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider, ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "./ThemeProvider";
 
 const divStyle = {
   width: "min(700px, 90vw)",
@@ -27,9 +27,9 @@ function App() {
   useEffect(() => {
     const body = document.querySelector("body");
     if (darkTheme) {
-      body.style.backgroundColor = "#282828";
+      body.style.backgroundColor = "#2e3440";
     } else {
-      body.style.backgroundColor = "#fbf1c7";
+      body.style.backgroundColor = "#eceff4";
     }
   }, [darkTheme]);
   return (
