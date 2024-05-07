@@ -32,6 +32,7 @@ function App() {
       body.style.backgroundColor = "#eceff4";
     }
   }, [darkTheme]);
+
   return (
     <BrowserRouter>
       <div className={darkTheme ? "dark-theme" : "light-theme"}>
